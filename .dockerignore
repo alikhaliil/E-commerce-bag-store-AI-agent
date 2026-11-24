@@ -1,0 +1,21 @@
+# Secrets: pass them at runtime with --env-file, never bake them into the image
+.env
+
+# Local environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.git/
+.gitignore
+
+# Generated data (rebuilt inside the image)
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/chroma_db/
+
+# Not needed at runtime
+evals/
+*.md
+!data/store_policies.md
+docs/

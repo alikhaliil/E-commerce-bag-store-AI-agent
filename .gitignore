@@ -1,0 +1,20 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+
+# Databases (SQLite + WAL side files)
+*.db
+*.db-wal
+*.db-shm
+
+# Vector store
+data/chroma_db/
+
+# Generated evaluation reports
+evals/eval_report.json
